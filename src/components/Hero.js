@@ -1,4 +1,5 @@
 import React from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Hero = () => {
   return (
@@ -12,12 +13,14 @@ const Hero = () => {
           the world we want to live
         </span>
 
-        <button
-          className="bg-white cursor-pointer hover:bg-transparent hover:text-white font-bold text-lg text-black hover:bg-gray-300
-          py-4 px-8 tracking-wider rounded border-2 border-red-300"
-        >
-          Explore
-        </button>
+        <AnchorLink href="#features">
+          <button
+            className="bg-white cursor-pointer hover:bg-transparent hover:text-white font-bold text-lg text-black hover:bg-gray-300
+          py-3 px-8 tracking-wider rounded border-2 border-red-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+          >
+            Explore
+          </button>
+        </AnchorLink>
 
         <img
           src="assets/hero.jpg"

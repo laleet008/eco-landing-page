@@ -1,19 +1,31 @@
 import "./App.css";
-import Features from "./components/Features";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Description from "./components/Description";
-import Footer from "./components/Footer";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import { Route, Routes } from "react-router";
+
+import Home from "./pages/Home";
+import TermsPage from "./pages/Terms";
+import Privacy from "./pages/Privacy";
+import Error from "./pages/Error";
 
 function App() {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, [location.pathname]);
   return (
-    <div className="">
-      <Header />
-      <Hero />
-      <Features />
-      <Description />
-      <Footer />
-    </div>
+    <>
+      <Routes>
+        <Route exact path="/" element={<Home />}></Route>
+        <Route exact path="/terms" element={<TermsPage />}></Route>
+        <Route exact path="/privacy" element={<Privacy />}></Route>
+        <Route path="*" element={<Error />}></Route>
+      </Routes>
+    </>
   );
 }
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -22,10 +23,16 @@ const Header = () => {
 
   return (
     <div className={navbarClasses.join(" ")}>
-      <h2 className="font-['Dancing Script'] logo">Abc Company</h2>
+      <Link to="/">
+        <h2 className="font-['Dancing Script'] logo">Abc Company</h2>
+      </Link>
       <div className="text-lg">
-        <span className="cursor-pointer link">Privacy Policy</span>
-        <span className="ml-8 cursor-pointer link">Terms</span>
+        <Link to="/privacy">
+          <span className="cursor-pointer link">Privacy Policy</span>
+        </Link>
+        <Link to="/terms">
+          <span className="ml-8 cursor-pointer link">Terms</span>
+        </Link>
       </div>
     </div>
   );

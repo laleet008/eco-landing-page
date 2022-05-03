@@ -3,7 +3,7 @@ import { MdSecurity } from "react-icons/md";
 
 const Features = () => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-black text-white " id="features">
       <div className="md:mx-40 mx-12 md:py-28 py-10  flex flex-col text-white text-center gap-6 items-center">
         <span className="text-center items-center font-bold md:text-4xl text-2xl">
           Our Work Ethics
