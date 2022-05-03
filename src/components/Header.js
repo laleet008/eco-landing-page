@@ -1,14 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 200) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
+  let navbarClasses = ["header"];
+  if (scrolled) {
+    navbarClasses.push("header-scroll");
+  }
+
   return (
-    <div className="bg-black sticky top-0">
-      <div className="md:mx-60 mx-12 py-6 text-white flex justify-between  items-center">
-        <img src="assets/eco-logo.png" alt="logo" />
-        <div className="text-lg">
-          <span className="cursor-pointer">Privacy Policy</span>
-          <span className="ml-8 cursor-pointer">Terms</span>
-        </div>
+    <div className={navbarClasses.join(" ")}>
+      <h2 className="font-['Dancing Script'] logo">Abc Company</h2>
+      <div className="text-lg">
+        <span className="cursor-pointer link">Privacy Policy</span>
+        <span className="ml-8 cursor-pointer link">Terms</span>
       </div>
     </div>
   );

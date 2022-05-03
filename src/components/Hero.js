@@ -2,33 +2,28 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="bg-black h-screen text-white">
-      <div className="md:mx-60 mx-12 py-16  flex flex-col text-white text-center gap-4 items-center">
-        <span className="font-['Catamaran'] text-center items-center text-4xl ">
-          Eco Launcher.
+    <div className="bg-black  text-white">
+      <div className="md:mx-60 mx-12 md:py-28 py-10  flex flex-col text-white text-center gap-6 items-center">
+        <span className="text-center items-center font-bold md:text-5xl text-3xl">
+          Not a long quote, <span className="text-[#a20916]">Abc Company </span>
         </span>
-        <span className="font-['Catamaran'] text-gray-300 text-center items-center text-3xl ">
-          Protect The World By Keeping Your Actions Ecological
+        <span className=" text-gray-300 text-center items-center text-3xl ">
+          Protect The World By Keeping Your Actions Ecological and show this is
+          the world we want to live
         </span>
-        <div className="relative md:ml-20">
-          <img
-            src="assets/image1.png"
-            className="h-[400px] absolute top-0 right-20 rotate-[-8deg] hover:scale-110"
-            alt="hero img"
-          />
-          <img
-            src="assets/image2.png "
-            className="h-[400px] rotate-[5deg] hover:scale-110"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="assets/google-play.png"
-            className="h-[60px] border border-gray-400 rounded hover:border-gray-600"
-            alt=""
-          />
-        </div>
+
+        <button
+          className="bg-white cursor-pointer hover:bg-transparent hover:text-white font-bold text-lg text-black hover:bg-gray-300
+          py-4 px-8 tracking-wider rounded border-2 border-red-300"
+        >
+          Explore
+        </button>
+
+        <img
+          src="assets/hero.jpg"
+          className="md:h-[400px] mt-6 rounded-lg"
+          alt=""
+        />
       </div>
     </div>
   );

@@ -3,6 +3,11 @@
   padding: 0;
   box-shadow: border-box;
 }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 @tailwind base;
 @tailwind components;

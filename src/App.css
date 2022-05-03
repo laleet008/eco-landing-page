@@ -1,7 +1,75 @@
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@700&family=Fascinate+Inline&family=Montserrat:wght@200;300;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@700&family=Dancing+Script:wght@700&family=Fascinate+Inline&family=Inter:wght@400;500;700&family=Montserrat:wght@200;300;500;600;700&display=swap");
 
 body {
   /* font-family: "Catamaran", sans-serif; */
   /* font-family: "Fascinate Inline", cursive; */
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #000;
+  padding: 20px 200px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+.header-scroll {
+  padding: 10px 200px;
+  box-shadow: 0 0 10px rgb(58, 2, 2);
+}
+
+/* mx-12 py-6 text-white flex justify-between  items-center */
+
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.8rem;
+  color: #fff;
+  text-shadow: 2px 2px #a20916;
+  text-align: center;
+}
+
+.link {
+  border-bottom: 3px solid #ebdee3;
+  transition: all 0.25s linear;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.link:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+
+  background-color: #a20916;
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* this is to match where the border is */
+  transform-origin: left;
+  transform: scale(0);
+  transition: 1s linear;
+  will-change: transform;
+}
+.link:hover:before {
+  transform: scale(1);
+}
+
+hr {
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+  background-color: red;
+  width: 80%;
 }
