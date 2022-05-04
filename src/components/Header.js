@@ -26,7 +26,7 @@ const Header = () => {
       <Link to="/">
         <h2 className="font-['Dancing Script'] logo">Abc Company</h2>
       </Link>
-      <div className="text-lg">
+      <div className="text-lg flex ">
         <Link to="/privacy">
           <span className="cursor-pointer link">Privacy Policy</span>
         </Link>
