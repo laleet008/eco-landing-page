@@ -13,7 +13,7 @@ const Error = () => {
               <div className="font-bold relative md:text-[250px] text-[180px] text-gray-400 opacity-20">
                 404
               </div>
-              <span className="absolute text-gray-200 font-bold md:text-8xl text-4xl tracking-widest	">
+              <span className="absolute text-gray-200 font-bold md:text-7xl text-4xl tracking-widest	">
                 Page Not Found
               </span>
               <Link to="/">
