@@ -8,15 +8,15 @@ const Hero = () => {
         <span className="text-center items-center font-bold md:text-5xl text-3xl">
           Not a long quote, <span className="text-[#a20916]">Abc Company </span>
         </span>
-        <span className=" text-gray-300 text-center items-center text-3xl ">
+        <span className=" text-gray-300 text-center items-center md:text-3xl text-xl">
           Protect The World By Keeping Your Actions Ecological and show this is
           the world we want to live
         </span>
 
         <AnchorLink href="#features">
           <button
-            className="bg-white cursor-pointer hover:bg-transparent hover:text-white font-bold text-lg text-black hover:bg-gray-300
-          py-3 px-8 tracking-wider rounded border-2 border-red-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+            className="bg-white cursor-pointer  hover:text-white font-bold text-lg text-black hover:bg-transparent
+          md:py-3 py-2 md:px-8 px-6 tracking-wider rounded border-2 border-red-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
           >
             Explore
           </button>
@@ -24,7 +24,7 @@ const Hero = () => {
 
         <img
           src="assets/hero.jpg"
-          className="md:h-[400px] mt-6 rounded-lg"
+          className="md:h-[400px]  mt-6 rounded-lg"
           alt=""
         />
       </div>

@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@700&family=Dancing+Script:wght@700&family=Fascinate+Inline&family=Inter:wght@400;500;700&family=Montserrat:wght@200;300;500;600;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@700&family=Dancing+Script:wght@700&family=Fascinate+Inline&family=Inter:wght@400;500;700&family=Montserrat:wght@200;300;500;600;700&family=Poppins:wght@400;500;700&display=swap");
 body {
   /* font-family: "Catamaran", sans-serif; */
   /* font-family: "Fascinate Inline", cursive; */
   /* font-family: "Montserrat", sans-serif; */
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Poppins", sans-serif;
 }
 
 .header {
@@ -19,9 +19,21 @@ body {
   top: 0;
 }
 
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 40px;
+  }
+}
+
 .header-scroll {
   padding: 10px 200px;
   box-shadow: 0 0 10px rgb(58, 2, 2);
+}
+
+@media (max-width: 768px) {
+  .header-scroll {
+    padding: 10px 40px;
+  }
 }
 
 /* mx-12 py-6 text-white flex justify-between  items-center */

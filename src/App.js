@@ -2,7 +2,6 @@ import "./App.css";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Route, Routes } from "react-router";
-
 import Home from "./pages/Home";
 import TermsPage from "./pages/Terms";
 import Privacy from "./pages/Privacy";
