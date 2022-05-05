@@ -3,10 +3,11 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Hero = () => {
   return (
-    <div className="bg-black  text-white">
+    <div className="hero-page  text-white">
       <div className="md:mx-60 mx-12 md:py-28 py-10  flex flex-col text-white text-center gap-6 items-center">
         <span className="text-center items-center font-bold md:text-5xl text-3xl">
-          Not a long quote, <span className="text-[#a20916]">Abc Company </span>
+          Not a long quote,{" "}
+          <span className="text-[#a20916] company-name">Abc Company </span>
         </span>
         <span className=" text-gray-300 text-center items-center md:text-3xl text-xl">
           Protect The World By Keeping Your Actions Ecological and show this is

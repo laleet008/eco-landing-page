@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Error = () => {
   return (
     <Layout>
-      <div className="bg-black text-white py-2">
+      <div className="error-page text-white py-2">
         <div className="md:mx-40 mx-10 md:py-20 py-8  ">
           <div className="md:mx-40 mx-10 ">
             <div className="flex justify-center flex-col items-center h-96 relative mb-32">
@@ -24,7 +24,6 @@ const Error = () => {
             </div>
           </div>
         </div>
-        <hr />
       </div>
     </Layout>
   );

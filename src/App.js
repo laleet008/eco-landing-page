@@ -1,6 +1,4 @@
 import "./App.css";
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
 import { Route, Routes } from "react-router";
 import Home from "./pages/Home";
 import TermsPage from "./pages/Terms";
@@ -8,14 +6,6 @@ import Privacy from "./pages/Privacy";
 import Error from "./pages/Error";
 
 function App() {
-  const location = useLocation();
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  }, [location.pathname]);
   return (
     <>
       <Routes>
