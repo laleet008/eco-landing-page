@@ -72,7 +72,7 @@ body {
   bottom: -3px; /* this is to match where the border is */
   transform-origin: left;
   transform: scale(0);
-  transition: 1s linear;
+  transition: 0.3s linear;
   will-change: transform;
 }
 .link:hover:before {

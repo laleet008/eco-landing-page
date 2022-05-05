@@ -19,8 +19,6 @@ const Description = () => {
           <img src="assets/office.jpg" className="rounded-lg" alt="" />
         </div>
       </div>
-
-      <hr />
     </div>
   );
 };

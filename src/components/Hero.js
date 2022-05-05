@@ -17,7 +17,7 @@ const Hero = () => {
         <AnchorLink href="#features">
           <button
             className="bg-white cursor-pointer  hover:text-white font-bold text-lg text-black hover:bg-transparent
-          md:py-3 py-2 md:px-8 px-6 tracking-wider rounded border-2 border-red-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+          md:py-3 py-2 md:px-8 px-6 tracking-wider rounded border-2 border-red-300 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-150"
           >
             Explore
           </button>
