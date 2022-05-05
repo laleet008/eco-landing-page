@@ -31,7 +31,7 @@ body {
 
 .header-scroll {
   padding: 10px 200px;
-  box-shadow: 0 0 10px rgb(58, 2, 2);
+  /* box-shadow: 0 0 10px rgb(58, 2, 2); */
 }
 
 @media (max-width: 768px) {

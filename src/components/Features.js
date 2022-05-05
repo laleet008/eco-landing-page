@@ -14,7 +14,7 @@ const Features = () => {
           nam sed.
         </span>
 
-        <div className="flex md:flex-row flex-col md:gap-0 gap-8 w-full  mt-8 ">
+        <div className="flex md:flex-row flex-col md:gap-6 gap-8 w-full  mt-8 ">
           <div className="flex flex-col md:gap-4 gap-2 justify-center max-w-1/3 items-center">
             <MdSecurity className="md:text-5xl text-3xl text-red-500" />
             <span className="text-center items-center font-bold md:text-2xl text-xl">
