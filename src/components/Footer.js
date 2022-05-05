@@ -9,7 +9,7 @@ const Footer = () => {
           <h2 className="logo">Abc Company</h2>
         </Link>
 
-        <span>Copyright © 2022 abc company</span>
+        <span>Copyright © {new Date().getFullYear()} abc company</span>
       </div>
     </div>
   );
